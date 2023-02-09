@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    height: 5.5rem;
+    box-shadow: 1px 1px 5px rgb(156, 156, 156);
+}
+
+header nav{
+    display: inline;
+    justify-content: right;
+    align-items: center;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #660303;
+    margin-left: 1rem;
+}
+
+
+header .logo_header{
+    height: 80px;
+    display: flex;
+    padding: 0%;
+    position: relative;
+}
+header .logo_header a{
+    padding: 0;
+    height: 5em;
+}
+
+/* BODY */
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+
+}
+
+.bienvenida {
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.bienvenida img{
+    width: 100%;
+    -webkit-filter: brightness(0.45);
+    position: relative;
+    margin-top: 88px;
+    
+}
+
+.bienvenida h1{
+    margin-top: 3rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    font-size: 50pt;
+}
+
+ .bienvenida h2 {
+    margin-top: 5rem;
+    color: white;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 100;
+}
+
+.seccion-1 {
+    background-color: white !important;
+}
+
+.nosotros {
+    margin-top: 30px;
+    margin-left: 160px;
+    margin-bottom: 50px;
+    display: flex;
+    width: 75%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgb(201, 201, 201);
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(224, 217, 217, 0.267);
+
+}
+
+.nosotros img {
+    /*order: 3;*/
+    height: 400px;
+    /*margin-left: auto;*/
+    float: right;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.texto-nosotros {
+    width: 45%;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 20px;
+
+}
+
+.nosotros h2 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    color:#660303;
+    font-size: 40pt; 
+    
+}
+
+.nosotros p {
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    display: block;
+    font-size: 13pt;
+
+}
+
+.seccion-2 {
+    background-image: url(/img/Cordoba-Cathedral.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .seccion-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(141, 21, 0, 0.87);
+    z-index: 0;
+  }
+
+  .seccion-2 .bloque-1 {
+    position: relative;
+    z-index: 1;
+    color:white;
+    padding:100px;
+    display: flex;
+  }
+
+  .bloque-1 h2{
+    text-align: center;
+    font-size: 35pt;
+  }
+
+  .bloque-1 p {
+    text-align: justify;
+    margin-left: 50px;
+    font-size: 13pt;
+  }
+
+  .bloque-1 img {
+    width: 550px;
+  }
+
+  .seccion-2 .bloque-2 {
+    position: relative;
+    z-index: 1;
+    color:white;
+    padding:50px;
+    display: flex;
+  }
+
+  .bloque-2 img {
+    width: 500px;
+    margin-left: 20px;
+
+  }
+
+  .bloque-2 h2{
+    text-align: center;
+    font-size: 35pt;
+  }
+
+  .bloque-2 p {
+    margin-right: 20px;
+    text-align: justify;
+    font-size: 13pt;
+  }
+
+
+
+  .seccion-2 .mision-vision-valores {
+    position: relative;
+    z-index: 1;
+    color:white;
+    padding:50px;
+    padding-left: 50px;
+    display: flex;
+    /*background-color: rgba(71, 71, 71, 0.836);*/
+    justify-content: space-between;
+    background-color: rgb(223, 223, 223);
+  }
+
+  .mision-vision-valores img {
+    width: 50px;
+    /*filter: invert(0.9);*/
+  }
+
+  .mision-vision-valores h3 {
+    font-size: 14pt;
+    text-align: center;
+    /*filter: invert(0.1);*/
+    margin-top: 10px;
+    color: black;
+  }
+  .mision-vision-valores p {
+    font-size: 12pt;
+    text-align: center;
+    color: black;
+    /*filter: invert(0.1);*/
+  }
+
+  .mision-vision-valores div {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    /*border-right: 1.5px solid;*/
+  }
+
+#divisiones {
+    text-align: center;
+    background: white;
+    margin-top: 30px;
+    font-size: 35pt;
+    color: #660303;
+  }
+
+
+.divisiones {
+  display: flex;
+  justify-content: center;
+  background: white;
+}
+
+
+.tarjeta {
+  width: 25%;
+  margin: 30px 30px 30px 30px;
+  background: rgba(224, 217, 217, 0.267);
+  padding: 15px;
+  text-align: center;
+  box-shadow: 1px 1px 5px rgb(201, 201, 201);
+}
+.tarjeta img {
+  width: 100%;
+}
+
+.tarjeta h3 { 
+  text-align: center;
+  font-size: 25pt;
+  color: #3d1d1d;
+}
+
+.tarjeta p {
+  font-size: 14pt;
+
+}
+
+
+.contenedor-contacto {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 50px;
+  margin: 90px;
+}
+
+.contenedor-contacto h2 {
+  margin-bottom: 15px;
+  font-size: 35pt;
+  color: #660303;
+}
+
+.contenedor-contacto p{
+  font-size: 13pt;
+  margin-bottom: 30px;
+}
+
+.contenedor-contacto a{
+  font-size: 13pt;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: black;
+  font-weight: 700;
+}
+
+.contenedor-contacto a i{
+  margin-right: 10px;
+}
+
+.contenedor-contacto form .campo, textarea {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 15px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+}
+
+.contenedor-contacto form textarea {
+  max-width: 530px;
+  min-width: 530px;
+  min-height: 140px;
+  max-height: 150px;
+}
+
+.contenedor-contacto .boton-enviar {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: rgb(94, 255, 0);
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.contenedor-contacto .boton-enviar:hover{
+  background: rgb(69, 184, 2);
+}
+
+
+/* FOOTER */
+
+footer{
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: grey;
+    width: 100%;
+    height: 50px;
+}

@@ -328,6 +328,11 @@ body {
   font-weight: 700;
 }
 
+.contenedor-contacto a img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
 .contenedor-contacto a i{
   margin-right: 10px;
 }
@@ -369,12 +374,19 @@ body {
 /* FOOTER */
 
 footer{
-    display: block;
+    display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding-left: 5px;
     padding-right: 5px;
     background-color: grey;
     width: 100%;
     height: 50px;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  font-size: 11pt;
+  vertical-align: center;
 }
